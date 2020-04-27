@@ -52,3 +52,26 @@ TEST(PracticeTest, notLargePalindrome)
     bool actual = obj.isPalindrome("notapalindrome");
     ASSERT_FALSE(actual);
 }
+//submit 1
+
+//additional tests for palindrome
+TEST(PracticeTest, empty)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, singleLetterWord)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("f");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, palindromeWithSpace)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("race car");
+    ASSERT_FAlse(actual);
+}
+//commit2
+
