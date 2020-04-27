@@ -71,7 +71,7 @@ TEST(PracticeTest, palindromeWithSpace)
 {
     Practice obj;
     bool actual = obj.isPalindrome("race car");
-    ASSERT_FAlse(actual);
+    ASSERT_FALSE(actual);
 }
 //commit2
 
