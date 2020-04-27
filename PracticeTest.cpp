@@ -20,3 +20,5 @@ TEST(PracticeTest, is_simple_palindrome)
     bool actual = obj.isPalindrome("aa");
     ASSERT_TRUE(actual);
 }
+//New tests for malindrome
+
