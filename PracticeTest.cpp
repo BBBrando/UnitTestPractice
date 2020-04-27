@@ -143,7 +143,7 @@ TEST(PracticeTest, largeSort)
     int third = 484123145;
     bool passed = false;
     obj.sortDescending(first , second, third);
-    if(first == 12341 && second == 45821 && third == 484123145) {
+    if(first == 484123145 && second == 45821 && third == 12341) {
       passed = true;
     }
     ASSERT_TRUE(passed);
