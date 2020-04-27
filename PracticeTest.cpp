@@ -135,6 +135,19 @@ TEST(PracticeTest, 1negSort)
 }
 
 //commit3
+TEST(PracticeTest, largeSort)
+{
+    Practice obj;
+    int first = 12341;
+    int second = 45821;
+    int third = 484123145;
+    bool passed = false;
+    obj.sortDescending(first , second, third);
+    if(first == 12341 && second == 45821 && third == 484123145) {
+      passed = true;
+    }
+    ASSERT_TRUE(passed);
+}
 
 
 
