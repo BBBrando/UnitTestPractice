@@ -25,14 +25,20 @@ void Practice::sortDescending(int & first, int & second, int & third)
     first = third;
     third = temp;
   }
+    if ( first < second ) //need to recheck first to second swap
+  {
+    int temp = first;
+    first = second;
+    second = temp;    
+  }
 }
 
 // Receive a string and return whether or not it is strictly a palindrome,
 // where it is spelled the same backwards and forwards when considering every
 // character in the string, but disregarding case ('x' is the same as 'X')
-bool Practice::isPalindrome(string input)
+bool Practice::isPalindrome(string input) 
 {
-  for(int i=0; i < input.size(); i++)
+  for(int i=0; i < (int)input.size(); i++)//(int) validates the input as a interger
   {
     if( input[i] < 'A' || input[i] > 'Z' )
     {
@@ -40,9 +46,9 @@ bool Practice::isPalindrome(string input)
       input[i] = input[i] - ('a' - 'A');
     }
   }
-  for(int i=0; i < input.size()/2; i++)
+  for(int i=0; i < (int)input.size()/2; i++)
   {
-    if( input[i] != input[input.size()-1-i] )
+    if( input[i] != (int)input[input.size()-1-i] )
       return false;
   }
   return true;
