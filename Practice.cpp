@@ -48,7 +48,7 @@ bool Practice::isPalindrome(string input)
   }
   for(int i=0; i < (int)input.size()/2; i++)
   {
-    if( input[i] != (int)input[input.size()-1-i] )
+    if( input[i] != input[(int)input.size()-1-i] )
       return false;
   }
   return true;
