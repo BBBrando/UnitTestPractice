@@ -102,7 +102,7 @@ TEST(PracticeTest, allNegSort)
     int third = -2;
     bool passed = false;
     obj.sortDescending(first , second, third);
-    if(first == 3 && second == 2 && third == 1) {
+    if(first == -1 && second == -2 && third == -3) {
       passed = true;
     }
     ASSERT_TRUE(passed);
@@ -115,7 +115,7 @@ TEST(PracticeTest, 111sort)
     int third = 1;
     bool passed = false;
     obj.sortDescending(first , second, third);
-    if(first == 3 && second == 2 && third == 1) {
+    if(first == 1 && second == 1 && third == 1) {
       passed = true;
     }
     ASSERT_TRUE(passed);
@@ -128,7 +128,7 @@ TEST(PracticeTest, 1negSort)
     int third = 2;
     bool passed = false;
     obj.sortDescending(first , second, third);
-    if(first == 3 && second == 2 && third == 1) {
+    if(first == 2 && second == 1 && third == -3) {
       passed = true;
     }
     ASSERT_TRUE(passed);
